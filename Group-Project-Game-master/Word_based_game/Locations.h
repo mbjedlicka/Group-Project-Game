@@ -146,18 +146,3 @@ public:
 	void addItem(int);
 };
 
-class CurrentLoc : public Locations
-{
-public:
-	CurrentLoc();
-	//functions
-	void enter();
-
-	void update(string);
-
-	void look();
-
-	void removeItem(int);
-
-	void addItem(int);
-};
