@@ -161,19 +161,115 @@ CompLab::CompLab()
 	description = "You have entered the school Computer Lab.\n";
 }
 
+void CompLab::enter() {
+	cout << endl << endl << "=====" << name << "=====" << endl;
+	cout << description << endl;
+}
+
+void CompLab::update(string choice) {
+
+}
+
+void CompLab::look() {
+	for (int i = 0; i < 5; i++)
+	{
+		if (inventory[i] != NULL && inventory[i]->compExists == true)
+		{
+			cout << inventory[i]->name << " ";
+		}
+	}
+}
+
+void CompLab::removeItem(int i) {
+	if(charLocation->inventory[i]->compExists = true)
+	{
+	charLocation->inventory[i]->compExists = false;
+	}
+	else {
+		cout << "That Item is not here" << endl;
+	}
+}
+
+void CompLab::addItem(int i) {
+	charLocation->inventory[i]->compExists = true;
+}
+
+
 ChemLab::ChemLab()
 {
 	name = "Chemistry Lab";
 	description = "You have entered the school Chemistry Lab.\n";
 }
 
+void ChemLab::enter() {
+	cout << endl << endl << "=====" << name << "=====" << endl;
+	cout << description << endl;
+}
+
+void ChemLab::update(string choice) {
+
+}
+
+void ChemLab::look() {
+	for (int i = 0; i < 5; i++)
+	{
+		if (inventory[i] != NULL && inventory[i]->chemLabExists == true)
+		{
+			cout << inventory[i]->name << " ";
+		}
+	}
+}
+
+void ChemLab::removeItem(int i) {
+	if(charLocation->inventory[i]->chemLabExists = true)
+	{
+	charLocation->inventory[i]->chemLabExists = false;
+	}
+	else {
+		cout << "That Item is not here" << endl;
+	}
+}
+
+void ChemLab::addItem(int i) {
+	charLocation->inventory[i]->chemLabExists = true;
+}
+
+
 ChemCloset::ChemCloset()
 {
 	name = "Chemistry Closet";
 	description = "You have entered the school Chemistry Closet.\n";
 }
-CurrentLoc::CurrentLoc()
-{
-	name = "";
-	description = "";
+
+void ChemCloset::enter() {
+	cout << endl << endl << "=====" << name << "=====" << endl;
+	cout << description << endl;
+}
+
+void ChemCloset::update(string choice) {
+
+}
+
+void ChemCloset::look() {
+	for (int i = 0; i < 5; i++)
+	{
+		if (inventory[i] != NULL && inventory[i]->chemClosetExists == true)
+		{
+			cout << inventory[i]->name << " ";
+		}
+	}
+}
+
+void ChemCloset::removeItem(int i) {
+	if(charLocation->inventory[i]->chemClosetExists = true)
+	{
+	charLocation->inventory[i]->cafeExists = false;
+	}
+	else {
+		cout << "That Item is not here" << endl;
+	}
+}
+
+void ChemCloset::addItem(int i) {
+	charLocation->inventory[i]->chemClosetExists = true;
 }
