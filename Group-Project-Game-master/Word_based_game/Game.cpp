@@ -174,6 +174,12 @@ void Game::grabInventory() {
 	}
 }
 
+void Game::hasItem(int i) {
+	if (character->inventory[i]->inventoryExists = true) {
+		
+	}
+}
+
 string Game::keywordChecker(string input, bool& validInput)
 {
 	string inputReturn;
@@ -203,9 +209,6 @@ string Game::keywordChecker(string input, bool& validInput)
 void Game::gameMenu()
 {
 	bool validInput = false;
-
-	
-
 	do
 	{
 		cout << endl << "What do you do?: ";
