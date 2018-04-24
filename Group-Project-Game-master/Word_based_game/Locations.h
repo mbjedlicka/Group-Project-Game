@@ -67,9 +67,16 @@ class MaintenanceCloset : public Locations
 {
 public:
 	MaintenanceCloset();
+	//functions
 	void enter();
-	
+
 	void update(string);
+
+	void look();
+
+	void removeItem(int);
+
+	void addItem(int);
 
 
 
@@ -79,35 +86,78 @@ class Cafeteria : public Locations
 {
 public:
 	Cafeteria();
-
+	//functions
 	void enter();
+
 	void update(string);
+
+	void look();
+
+	void removeItem(int);
+
+	void addItem(int);
 };
 
 class CompLab : public Locations
 {
 public:
 	CompLab();
+	//functions
+	void enter();
 
+	void update(string);
+
+	void look();
+
+	void removeItem(int);
+
+	void addItem(int);
 };
 
 class ChemLab : public Locations
 {
 public:
 	ChemLab();
+	//functions
+	void enter();
 
+	void update(string);
+
+	void look();
+
+	void removeItem(int);
+
+	void addItem(int);
 };
 
 class ChemCloset : public Locations
 {
 public:
 	ChemCloset();
+	//functions
+	void enter();
 
+	void update(string);
+
+	void look();
+
+	void removeItem(int);
+
+	void addItem(int);
 };
 
 class CurrentLoc : public Locations
 {
 public:
 	CurrentLoc();
+	//functions
+	void enter();
 
+	void update(string);
+
+	void look();
+
+	void removeItem(int);
+
+	void addItem(int);
 };
