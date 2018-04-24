@@ -26,6 +26,7 @@ public:
 	void printHelp();
 	void dropInventory();
 	void grabInventory();
+	bool hasItem(int);
 	//the main game menu where the player will be asked for input
 	void gameMenu();
 	//check the player input against the available keywords 
