@@ -92,6 +92,30 @@ void MaintenanceCloset::update(string choice) {
 
 }
 
+void MaintenanceCloset::look() {
+	for (int i = 0; i < 5; i++)
+	{
+		if (inventory[i] != NULL && inventory[i]->maintExists == true)
+		{
+			cout << inventory[i]->name << " ";
+		}
+	}
+}
+
+void MaintenanceCloset::removeItem(int i) {
+	if(charLocation->inventory[i]->maintExists = true)
+	{
+	charLocation->inventory[i]->maintExists = false;
+	}
+	else {
+		cout << "That Item is not here" << endl;
+	}
+}
+
+void MaintenanceCloset::addItem(int i) {
+	charLocation->inventory[i]->maintExists = true;
+}
+
 Cafeteria::Cafeteria()
 {
 	name = "Cafeteria";
@@ -104,15 +128,31 @@ void Cafeteria::enter() {
 }
 
 void Cafeteria::update(string choice) {
-	if (choice == "look") {
-		for (int i = 0; i < 5; i++)
+
+}
+
+void Cafeteria::look() {
+	for (int i = 0; i < 5; i++)
+	{
+		if (inventory[i] != NULL && inventory[i]->cafeExists == true)
 		{
-			if (inventory[i] != NULL && inventory[i]->cafeExists == true)
-			{
-				cout << inventory[i]->name << " ";
-			}
+			cout << inventory[i]->name << " ";
 		}
 	}
+}
+
+void Cafeteria::removeItem(int i) {
+	if(charLocation->inventory[i]->cafeExists = true)
+	{
+	charLocation->inventory[i]->cafeExists = false;
+	}
+	else {
+		cout << "That Item is not here" << endl;
+	}
+}
+
+void Cafeteria::addItem(int i) {
+	charLocation->inventory[i]->cafeExists = true;
 }
 
 CompLab::CompLab()
