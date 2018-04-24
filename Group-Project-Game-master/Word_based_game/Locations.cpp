@@ -65,7 +65,7 @@ void Entrance::look() {
 }
 
 void Entrance::removeItem(int i) {
-	if(charLocation->inventory[i]->entanceExists = true)
+	if(charLocation->inventory[i]->entranceExists = true)
 	{
 	charLocation->inventory[i]->entranceExists = false;
 	}
