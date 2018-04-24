@@ -174,7 +174,7 @@ void Game::grabInventory() {
 	}
 }
 
-void Game::hasItem(int i) {
+bool Game::hasItem(int i) {
 	if (character->inventory[i]->inventoryExists = true) {
 		
 	}
