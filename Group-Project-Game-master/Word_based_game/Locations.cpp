@@ -65,7 +65,13 @@ void Entrance::look() {
 }
 
 void Entrance::removeItem(int i) {
+	if(charLocation->inventory[i]->entanceExists = true)
+	{
 	charLocation->inventory[i]->entranceExists = false;
+	}
+	else {
+		cout << "That Item is not here" << endl;
+	}
 }
 
 void Entrance::addItem(int i) {
