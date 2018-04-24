@@ -63,11 +63,37 @@ void Game::setGame()
 	cafeteria->inventory[2] = mainKey;
 	cafeteria->inventory[3] = chemKey;
 	cafeteria->inventory[4] = acidBottle;
+	
+	maintenanceCloset->inventory[0] = flashDrive;
+	maintenanceCloset->inventory[1] = flashLight;
+	maintenanceCloset->inventory[2] = mainKey;
+	maintenanceCloset->inventory[3] = chemKey;
+	maintenanceCloset->inventory[4] = acidBottle;
+	
+	compLab->inventory[0] = flashDrive;
+	compLab->inventory[1] = flashLight;
+	compLab->inventory[2] = mainKey;
+	compLab->inventory[3] = chemKey;
+	compLab->inventory[4] = acidBottle;
+	
+	chemLab->inventory[0] = flashDrive;
+	chemLab->inventory[1] = flashLight;
+	chemLab->inventory[2] = mainKey;
+	chemLab->inventory[3] = chemKey;
+	chemLab->inventory[4] = acidBottle;
+	
+	chemCloset->inventory[0] = flashDrive;
+	chemCloset->inventory[1] = flashLight;
+	chemCloset->inventory[2] = mainKey;
+	chemCloset->inventory[3] = chemKey;
+	chemCloset->inventory[4] = acidBottle;
 
 	entrance->inventory[0]->entranceExists = true;
+	cafeteria->inventory[2]->cafeExists = true;
+	maintenanceCloset->inventory[1]->maintExists = true;
+	chemLab->inventory[3]->chemLabExists = true;
+	chemCloset->inventory[4]->chemClosetExists = true;
 	
-	cafeteria->inventory[1]->cafeExists = true;
-
 	charLocation = entrance;
 
 
