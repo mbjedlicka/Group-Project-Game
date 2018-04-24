@@ -139,9 +139,9 @@ void Game::grabInventory() {
 	getline(cin, select);
 	for (int i = 0; i < 5; i++) {
 		if (select.compare(charLocation->inventory[i]->name) == 0) {
+			charLocation->removeItem(i);
 			character->inventory[i] = charLocation->inventory[i];
 			character->inventory[i]->inventoryExists = true;
-			charLocation->removeItem(i);
 			cout << endl << "You picked up: " << character->inventory[i]->name;
 			break;
 		}
